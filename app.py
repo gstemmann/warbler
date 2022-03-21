@@ -113,7 +113,9 @@ def login():
 def logout():
     """Handle logout of user."""
 
-    # IMPLEMENT THIS
+    session.pop("username")
+    return redirect("/login")
+
 
 
 ##############################################################################
